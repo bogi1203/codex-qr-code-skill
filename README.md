@@ -8,6 +8,32 @@ Offline QR code generator skill for OpenAI Codex. Generate accurate, phone-scann
 
 This repository contains a Codex skill named `qr-code`. After installation, Codex can call it automatically when the user asks for a QR code or when Codex decides a phone-scannable link would be useful.
 
+## Download / Quick Install
+
+**Download ZIP:** [qr-code-skill.zip](https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip)
+
+**Windows PowerShell install:**
+
+```powershell
+$zip = Join-Path $env:TEMP "qr-code-skill.zip"
+$skills = Join-Path $env:USERPROFILE ".codex\skills"
+New-Item -ItemType Directory -Force $skills | Out-Null
+Invoke-WebRequest -Uri "https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip" -OutFile $zip
+Expand-Archive -Path $zip -DestinationPath $skills -Force
+Remove-Item $zip
+```
+
+**macOS / Linux install:**
+
+```bash
+mkdir -p ~/.codex/skills
+curl -L -o /tmp/qr-code-skill.zip "https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip"
+unzip -o /tmp/qr-code-skill.zip -d ~/.codex/skills
+rm /tmp/qr-code-skill.zip
+```
+
+Restart Codex after installing the skill.
+
 ## Keywords
 
 Codex skill, OpenAI Codex skill, Codex QR code, QR code generator, qrcode generator, offline QR generator, phone scan link, mobile scanning, PNG QR code, SVG QR code, AI agent skill, agent workflow, shareable demo link, website QR code, design QR code.
@@ -30,14 +56,12 @@ Codex skill, OpenAI Codex skill, Codex QR code, QR code generator, qrcode genera
 
 ## Install
 
-Download this repository or `dist/qr-code-skill.zip`, then place the `qr-code` folder in your Codex skills directory:
+If you prefer manual installation, download this repository or `dist/qr-code-skill.zip`, then place the `qr-code` folder in your Codex skills directory:
 
 ```text
 Windows: C:\Users\<you>\.codex\skills\qr-code
 macOS/Linux: ~/.codex/skills/qr-code
 ```
-
-Restart Codex after installing the skill.
 
 ## Usage
 

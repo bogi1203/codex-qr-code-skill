@@ -6,6 +6,32 @@
 
 這是一個給 OpenAI Codex 使用的離線 QR code generator skill。安裝後，當使用者需要手機掃描、網站連結、美術素材、demo 連結、本機預覽、社群貼文、分享頁面或 QR 碼時，Codex 可以自動調用這個 `qr-code` skill 產生 PNG 或 SVG QR code。
 
+## 下載 / 快速安裝
+
+**直接下載 ZIP：** [qr-code-skill.zip](https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip)
+
+**Windows PowerShell 安裝：**
+
+```powershell
+$zip = Join-Path $env:TEMP "qr-code-skill.zip"
+$skills = Join-Path $env:USERPROFILE ".codex\skills"
+New-Item -ItemType Directory -Force $skills | Out-Null
+Invoke-WebRequest -Uri "https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip" -OutFile $zip
+Expand-Archive -Path $zip -DestinationPath $skills -Force
+Remove-Item $zip
+```
+
+**macOS / Linux 安裝：**
+
+```bash
+mkdir -p ~/.codex/skills
+curl -L -o /tmp/qr-code-skill.zip "https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip"
+unzip -o /tmp/qr-code-skill.zip -d ~/.codex/skills
+rm /tmp/qr-code-skill.zip
+```
+
+安裝後重開 Codex。
+
 ## 搜尋關鍵字
 
 Codex skill、OpenAI Codex skill、Codex QR code、QR code generator、qrcode generator、離線 QR 產生器、手機掃描連結、PNG QR code、SVG QR code、AI agent skill、agent workflow、網站 QR 碼、設計 QR 碼、demo link QR code。
@@ -28,14 +54,12 @@ Codex skill、OpenAI Codex skill、Codex QR code、QR code generator、qrcode ge
 
 ## 安裝
 
-下載這個 repo 或 `dist/qr-code-skill.zip`，把裡面的 `qr-code` 資料夾放到 Codex skills 目錄：
+如果要手動安裝，下載這個 repo 或 `dist/qr-code-skill.zip`，把裡面的 `qr-code` 資料夾放到 Codex skills 目錄：
 
 ```text
 Windows: C:\Users\<你的帳號>\.codex\skills\qr-code
 macOS/Linux: ~/.codex/skills/qr-code
 ```
-
-安裝後重開 Codex。
 
 ## 使用方式
 
