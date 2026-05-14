@@ -8,6 +8,12 @@
 
 ## 下載 / 快速安裝
 
+**把這段貼給 Codex 就會安裝：**
+
+```text
+Use $skill-installer to install https://github.com/bogi1203/codex-qr-code-skill/tree/main/qr-code
+```
+
 **直接下載 ZIP：** [qr-code-skill.zip](https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip)
 
 **Windows PowerShell 安裝：**

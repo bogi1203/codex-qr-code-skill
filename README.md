@@ -10,6 +10,12 @@ This repository contains a Codex skill named `qr-code`. After installation, Code
 
 ## Download / Quick Install
 
+**Paste this into Codex to install:**
+
+```text
+Use $skill-installer to install https://github.com/bogi1203/codex-qr-code-skill/tree/main/qr-code
+```
+
 **Download ZIP:** [qr-code-skill.zip](https://github.com/bogi1203/codex-qr-code-skill/releases/download/v0.1.0/qr-code-skill.zip)
 
 **Windows PowerShell install:**
