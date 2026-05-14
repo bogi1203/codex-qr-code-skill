@@ -1,0 +1,6 @@
+interface:
+  display_name: "QR Code"
+  short_description: "產生可手機掃描的 PNG/SVG QR code 分享圖與設計素材"
+  default_prompt: "Use $qr-code to create a scannable QR code for this link or shareable output."
+policy:
+  allow_implicit_invocation: true
