@@ -1,6 +1,21 @@
 # Codex QR Code Skill
 
-這是一個給 Codex 使用的 `qr-code` skill。安裝後，當使用者需要手機掃描、網站連結、美術素材、demo 連結、分享頁面或 QR 碼時，Codex 可以自動調用這個 skill 產生 PNG 或 SVG QR code。
+[![Release](https://img.shields.io/github/v/release/bogi1203/codex-qr-code-skill?label=release)](https://github.com/bogi1203/codex-qr-code-skill/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Codex Skill](https://img.shields.io/badge/Codex-skill-blue)](qr-code/SKILL.md)
+
+這是一個給 OpenAI Codex 使用的離線 QR code generator skill。安裝後，當使用者需要手機掃描、網站連結、美術素材、demo 連結、本機預覽、社群貼文、分享頁面或 QR 碼時，Codex 可以自動調用這個 `qr-code` skill 產生 PNG 或 SVG QR code。
+
+## 搜尋關鍵字
+
+Codex skill、OpenAI Codex skill、Codex QR code、QR code generator、qrcode generator、離線 QR 產生器、手機掃描連結、PNG QR code、SVG QR code、AI agent skill、agent workflow、網站 QR 碼、設計 QR 碼、demo link QR code。
+
+## 適合用在
+
+- 想讓 Codex 在網站、App、設計或發佈流程中自動產生 QR code 的使用者。
+- 需要分享 demo link、preview URL、local tunnel、文件、dashboard、landing page 的開發者。
+- 需要把 QR code 放進海報、mockup、社群圖片、印刷素材或客戶預覽圖的設計師與創作者。
+- 不想依賴第三方 QR 網站、希望在 AI agent workflow 裡本機生成 QR code 的人。
 
 ## 功能
 
@@ -38,6 +53,10 @@ macOS/Linux: ~/.codex/skills/qr-code
 ```text
 用 $qr-code 幫我生成 https://www.youtube.com/ 的 QR code
 ```
+
+## 分享文案
+
+需要在 Codex 裡自動產生 QR 碼嗎？`codex-qr-code-skill` 是一個離線 OpenAI Codex skill，可以替網站、demo、設計稿、社群貼文和分享連結產生可手機掃描的 PNG/SVG QR code。
 
 ## 範例
 

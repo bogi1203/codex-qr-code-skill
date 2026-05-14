@@ -1,8 +1,23 @@
 # QR Code Skill for Codex
 
-Generate accurate, phone-scannable QR codes from Codex whenever a website, link, artwork, demo, or shareable output needs mobile scanning.
+[![Release](https://img.shields.io/github/v/release/bogi1203/codex-qr-code-skill?label=release)](https://github.com/bogi1203/codex-qr-code-skill/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Codex Skill](https://img.shields.io/badge/Codex-skill-blue)](qr-code/SKILL.md)
+
+Offline QR code generator skill for OpenAI Codex. Generate accurate, phone-scannable QR codes as PNG or SVG whenever a website, link, artwork, demo, local preview, social post, or shareable output needs mobile scanning.
 
 This repository contains a Codex skill named `qr-code`. After installation, Codex can call it automatically when the user asks for a QR code or when Codex decides a phone-scannable link would be useful.
+
+## Keywords
+
+Codex skill, OpenAI Codex skill, Codex QR code, QR code generator, qrcode generator, offline QR generator, phone scan link, mobile scanning, PNG QR code, SVG QR code, AI agent skill, agent workflow, shareable demo link, website QR code, design QR code.
+
+## Best For
+
+- Codex users who want automatic QR code generation during website, app, design, or launch workflows.
+- Developers sharing demo links, preview URLs, local tunnel URLs, docs, dashboards, and landing pages.
+- Designers and creators who need QR codes for posters, mockups, social images, printable assets, or client previews.
+- AI agent workflows that should generate scannable phone links without relying on third-party QR websites.
 
 ## Features
 
@@ -40,6 +55,10 @@ To force Codex to use this skill explicitly:
 ```text
 Use $qr-code to generate a QR code for https://www.youtube.com/
 ```
+
+## Share Blurb
+
+Need a QR code inside Codex? `codex-qr-code-skill` is an offline OpenAI Codex skill that automatically generates phone-scannable PNG/SVG QR codes for websites, demos, artwork, social posts, and shareable links.
 
 ## Example
 
